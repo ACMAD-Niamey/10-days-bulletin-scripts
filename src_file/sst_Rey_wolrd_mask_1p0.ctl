@@ -1,0 +1,10 @@
+DSET ^sst_Rey_wolrd_mask_1p0.dat
+TITLE Mask data
+UNDEF -9999.0
+XDEF 360 LINEAR -179.5 1.0
+YDEF 180 LINEAR -89.5 1.0
+ZDEF 1 LINEAR 1.0 1.0
+TDEF 0 LINEAR 11:14Z07Nov2021 1mo
+VARS 1
+  mask 0 99 background mask data (99)
+ENDVARS

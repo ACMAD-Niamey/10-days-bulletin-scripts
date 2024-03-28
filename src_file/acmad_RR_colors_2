@@ -1,0 +1,70 @@
+*UKMET colors
+set rgb 26 172 254 252
+set rgb 27   4 254 252
+set rgb 28   4 170 252
+set rgb 29   4  85 249 
+set rgb 30   5  78 180
+set rgb 31  49 130 170
+set rgb 32  49 140 140
+set rgb 33  49 170 130
+set rgb 34   4 162  45
+set rgb 35 106 221  49 
+set rgb 36  49 252  49
+set rgb 37 184 252  49
+set rgb 38 223 254  48
+set rgb 39 251 252   5
+set rgb 40 252 234  12
+set rgb 41 252 201   4
+set rgb 42 252 170   4
+set rgb 43 252 122   4
+set rgb 44 252  84   4
+set rgb 45 248   2   4
+set rgb 46 205   2   4 
+set rgb 47 169   2   4
+set rgb 48 116   0   0
+set rgb 49 108   0  32 
+set rgb 50  93   0  95
+set rgb 51  85   0 127
+*
+set rgb 52 192 180 255
+set rgb 53 160 140 255
+set rgb 54 128 112 235
+set rgb 55 112  96 220   
+set rgb 56  72  60 200   
+set rgb 57  60  40 180
+set rgb 58  45  30 165
+set rgb 59  40   0 160
+*
+*light pink to dark rose  
+set rgb 61 255 230 230
+set rgb 62 255 200 200
+set rgb 63 248 160 160
+set rgb 64 230 140 140
+set rgb 65 230 112 112
+set rgb 66 230  80  80   
+set rgb 67 200  60  60   
+set rgb 68 180  40  40
+set rgb 69 164  32  32
+*light beige to dark brown   
+set rgb 71 250 240 230
+set rgb 72 240 220 210
+set rgb 73 225 190 180
+set rgb 74 200 160 150
+set rgb 75 180 140 130   
+set rgb 76 160 120 110  
+set rgb 77 140 100  90
+set rgb 78 120  80  70
+set rgb 79 100  60  50
+*may rainbow
+set rgb 80 144 81 170
+set rgb 81 55 53 206
+set rgb 82 85 152 221
+set rgb 83 64 185 129
+set rgb 84 150 207 23
+set rgb 85 241 233 0
+set rgb 86 244 144 0
+set rgb 87 230 73 43
+set rgb 88 236 0 0
+set rgb 89 235 235 235
+*
+

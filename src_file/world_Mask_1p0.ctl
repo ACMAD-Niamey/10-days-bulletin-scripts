@@ -1,0 +1,10 @@
+DSET ^world_Mask_1p0.dat
+TITLE Mask data
+UNDEF -9999.0
+XDEF 720 LINEAR -179.75 0.5
+YDEF 360 LINEAR -89.75 0.5
+ZDEF 1 LINEAR 1.0 1.0
+TDEF 0 LINEAR 15:43Z26Mar2019 1mo
+VARS 1
+  mask 0 99 background mask data (99)
+ENDVARS
