@@ -10,21 +10,35 @@ for prd in 5days 10days Wk1 Wk2
     if [ $prd = "5days" ]; then init1=1; init2=$((init1+4)); fi
     if [ $prd = "10days" ]; then init1=1; init2=$((init1+9)); fi
     if [ $prd = "Wk1" ]; then init1=1; init2=$((init1+6)); fi
-    if [ $prd = "Wk2" ]; then init1=7; init2=$((init1+6)); fi
+    if [ $prd = "Wk2" ]; then init1=8; init2=$((init1+6)); fi 
 
-    date1=`LC_ALL=en_US.utf8 date --date "-$init1 day ago" "+%d%b%Y"`
-    date2=`LC_ALL=en_US.utf8 date --date "-$init2 day ago" "+%d%b%Y"`
+    if [ $unameout = "Darwin" ]; then
+        date1=`date -v +${init1}d +%d%b%Y`
+        date2=`date -v +${init2}d +%d%b%Y`
+ 
+        date1clm=`date -v +${init1}d +%d%b`
+        date2clm=`date -v +${init2}d +%d%b`
+    else
+        date1=`LC_ALL=en_US.utf8 date --date "-$init1 day ago" "+%d%b%Y"`
+        date2=`LC_ALL=en_US.utf8 date --date "-$init2 day ago" "+%d%b%Y"`
 
-    date1clm=`LC_ALL=en_US.utf8 date --date "-$init1 day ago" "+%d%b"`
-    date2clm=`LC_ALL=en_US.utf8 date --date "-$init2 day ago" "+%d%b"`
+        date1clm=`LC_ALL=en_US.utf8 date --date "-$init1 day ago" "+%d%b"`
+        date2clm=`LC_ALL=en_US.utf8 date --date "-$init2 day ago" "+%d%b"`
+    fi
+ 
 
     echo $date1 $date2
     echo $date1clm $date2clm
     ndays=$((init2-init1+1))
 
+  
+
     ######### plot CPC-Unified ########################################################################
-    bash get_cpcuni_clim_data.sh $init1 $init2
+    # todo : get get_cpcuni_clim_data.sh script
+    bash get_cpcuni_clim_data.sh $init1 $init2 
     
+   
+
     cp src_file/save.gs .
     cp src_file/parsestr.gsf .
     cp src_file/qdims.gsf .
